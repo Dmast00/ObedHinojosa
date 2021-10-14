@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --main-color:#1D2026;
+    --secondary-color:#778086;
+    --shadow-color:#2e2541;
+    --text-color:#fff;
+
+    --main-font-size:1rem;
+    --seocndary-font-size:1.186rem;
+    --third-font-size:2.2rem;
+    --text-font:'Poppis',sans-serif;
+
+
+}
+body{
+    margin: 0;
+    font-family: var(--text-font);
+}
+ul{
+    list-style: none;
+
+}
+li{
+    list-style: none;
+    cursor: pointer;
+    font-size: var(--main-font-size);
+}
+li:hover{
+    color: var(--secondary-color);
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+i{
+
+    cursor: pointer;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+.nav__container{
+    width: 100%;
+    height: 10vh;
+    background:var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.nav__list{
+    margin: 0 ;
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+.nav__item{
+    font-size: var(--seocndary-font-size);
+    margin: 0 0.650rem;
+    color: var(--text-color);
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+    height: 90vh;
+    background: var(--secondary-color);
+    background-image: url('img/background.jpg');
+    justify-items: center;
+    
+}   
+.profile__photo{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    border: solid 3px white;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-image: url(img/me.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.name__container{
+    color: var(--text-color);
+    font-size: var(--third-font-size);
+    grid-column: 2/5;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.social__media{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    font-size: var(--third-font-size);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#Social-media-link{
+    margin : 0 8px 0 ;
+}
+.aboutme__container{
+    height: 100vh;
+    background: var(--main-color);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(8,1fr);
+
+}
+.aboutme__card{
+
+}
+.photo__left{
+
+}
